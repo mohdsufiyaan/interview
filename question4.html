@@ -1,0 +1,20 @@
+<script>  
+function validateform(theform){  
+var name=document.myform.name.value;  
+  
+  
+if (name==null || name==""){  
+  alert("Name can't be blank");  
+  return false;  
+}else if(theform.check.checked == false){  
+  alert("please check out the checkbox ");  
+  return false;  
+  }  
+}  
+</script>  
+<body>  
+<form name="myform" onsubmit="return validateform(this)" >  
+Name: <input type="text" name="name"><br/>  
+checkbox: <input type="checkbox" name="check"><br/>  
+<input type="submit" value="register">  
+</form>
